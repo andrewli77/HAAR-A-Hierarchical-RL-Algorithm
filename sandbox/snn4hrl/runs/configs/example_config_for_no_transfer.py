@@ -35,4 +35,4 @@ itr_delay = 0
 
 transfer = False
 
-pkl_path = path_to_low_level_skills
+pkl_path = "/h/andrewli/Documents/HAAR-A-Hierarchical-RL-Algorithm/data/local/Ant-snn/Ant-snn_10MI_5grid_6latCat_bil_0010/params.pkl"

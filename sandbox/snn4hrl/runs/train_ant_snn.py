@@ -94,7 +94,7 @@ for s in range(10, 110, 10):  # [10, 20, 30, 40, 50]:
                       'pip install --upgrade theano',
                       ],
         # Number of parallel workers for sampling
-        n_parallel=16,
+        n_parallel=32,
         # Only keep the snapshot parameters for the last iteration
         snapshot_mode="last",
         # Specifies the seed for the experiment. If this is not provided, a random seed
@@ -107,4 +107,5 @@ for s in range(10, 110, 10):  # [10, 20, 30, 40, 50]:
         sync_s3_pkl=True,  # for sync the pkl file also during the training
         sync_s3_png=True,
         terminate_machine=True,  # dangerous to have False!
+        use_gpu=True
     )

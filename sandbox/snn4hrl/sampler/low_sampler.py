@@ -54,7 +54,7 @@ class LowSampler(Sampler):
         env_low = normalize(AntEnv(ego_obs=True))
         # baseline_low = LinearFeatureBaseline(env_spec=env_low.spec)
         # low_policy = env.low_policy
-        pkl_path = '/home/lsy/Desktop/rllab/data/local/Ant-snn1000/Ant-snn_10MI_5grid_6latCat_bil_0040/params.pkl'
+        pkl_path = '/h/andrewli/Documents/HAAR-A-Hierarchical-RL-Algorithm/data/local/Ant-snn/Ant-snn_10MI_5grid_6latCat_bil_0010/params.pkl'
         data = joblib.load(os.path.join(config.PROJECT_PATH, pkl_path))
         low_policy = data['policy']
 
